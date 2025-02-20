@@ -1,0 +1,121 @@
+/* styles.css - Elegant and Modern Styling */
+
+:root {
+          --primary-color: #003366; /* Deep Navy Blue */
+          --secondary-color: #FF8C00; /* Elegant Orange */
+          --background-color: #f8f9fa; /* Light Gray */
+          --text-color: #2c3e50; /* Dark Gray Blue */
+          --dark-background: #1c1c1c;
+          --dark-text: #E0E0E0;
+          --accent-color: #e63946; /* Modern Red Accent */
+          --font-primary: 'Poppins', sans-serif;
+      }
+      
+      body {
+          font-family: var(--font-primary);
+          margin: 0;
+          padding: 0;
+          background-color: var(--background-color);
+          color: var(--text-color);
+          transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .dark-mode {
+          background-color: var(--dark-background);
+          color: var(--dark-text);
+      }
+      
+      header {
+          background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+          padding: 20px 0;
+          text-align: center;
+          color: white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1 {
+          margin: 0;
+          font-size: 2.5rem;
+      }
+      
+      nav ul {
+          list-style: none;
+          padding: 0;
+      }
+      
+      nav ul li {
+          display: inline;
+          margin: 0 20px;
+      }
+      
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.2rem;
+          transition: opacity 0.3s;
+      }
+      
+      nav ul li a:hover {
+          opacity: 0.7;
+      }
+      
+      .hero {
+          text-align: center;
+          padding: 120px 20px;
+          background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+          color: white;
+          font-size: 1.4rem;
+      }
+      
+      .projects, .resume, .contact {
+          padding: 60px 20px;
+          text-align: center;
+      }
+      
+      .project-list {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+      }
+      
+      .project {
+          background-color: var(--primary-color);
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+          width: 300px;
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s, box-shadow 0.3s;
+      }
+      
+      .project:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      
+      .btn {
+          display: inline-block;
+          padding: 12px 24px;
+          background-color: var(--secondary-color);
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          transition: background-color 0.3s;
+      }
+      
+      .btn:hover {
+          background-color: var(--accent-color);
+      }
+      
+      footer {
+          text-align: center;
+          padding: 20px;
+          background-color: var(--primary-color);
+          color: white;
+          margin-top: 40px;
+          font-size: 1rem;
+      }
+      
